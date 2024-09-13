@@ -1,0 +1,88 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #D1E9F6 50%, #EECAD5 50%);
+}
+
+#game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+    width: 350px;
+    padding: 20px;
+    height: auto;
+}
+
+h1 {
+    margin: 20px 0;
+    color: aquamarine;
+    font-family: "Sofia", sans-serif;
+}
+
+span {
+    color: black;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
+    gap: 5px;
+    background-color: rgb(234, 231, 231);
+    margin-bottom: 20px;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    max-width: 260px;
+    height: 260px;
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cell:hover{
+    box-shadow: 0 0 10px aquamarine;
+}
+#status {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#reset {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    background-color: #282c34;
+    color: #61dafb;
+    border: none;
+    cursor: pointer;
+    border-radius: 50% 5%;
+}
+#reset:hover
+{
+    box-shadow: 0 0 20px aquamarine;
+}
